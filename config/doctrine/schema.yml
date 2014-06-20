@@ -1,0 +1,41 @@
+Noticia:
+  actAs: { Timestampable: ~ }
+  columns:
+    titulo:     {type: string(255), notnull: true}
+    cuerpo:     {type: string(10000), notnull: true}
+    imagen:     {type: string(255), notnull: true}
+    autor:      {type: string(255), notnull: true}
+    lugar:      {type: string(255), notnull: true}
+    fecha:      {type: date, notnull: true}
+ 
+      
+Contacto:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre:        {type: string(255), notnull: true}
+    ap_paterno:    {type: string(255), notnull: true}
+    ap_materno:    {type: string(255)}
+    telefono:      {type: string(20), notnull: true}
+    email:         {type: string(100), notnull: true}
+    direccion:     {type: string(255)}
+    empresa:       {type: string(255)}
+    
+Persona:
+  actAs: { Timestampable: ~ }
+  columns:
+    nombre:            {type: string(50), notnull: true}
+    ap_paterno:        {type: string(30), notnull: true}
+    ap_materno:        {type: string(30)}
+    ap_casada:         {type: string(30)}
+    ci:                {type: string(14), notnull: true, unique: true}
+    expedido:          {type: string(2), notnull: true}
+    direccion:         {type: string(255), notnull: true}
+    telefono:          {type: string(20)}
+    celular:           {type: string(20), notnull: true}
+    fax:               {type: string(20)}
+    casilla:           {type: string(10)}
+    email:             {type: string(255)}
+    fecha_nacimiento:  {type: date}
+    is_active:         {type: boolean, notnull: true, default: true }
+    foto:              {type: string(50)}   
+
