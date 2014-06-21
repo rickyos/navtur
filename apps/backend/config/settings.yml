@@ -24,6 +24,9 @@ test:
 
 all:
   .settings:
+    il8n: on
+    default_culture: es
+    
     # Form security secret (CSRF protection)
     csrf_secret:            d35e20d74610c3d403213fd68ca523860b804349
 
@@ -33,3 +36,10 @@ all:
 
     # Enable the database manager
     use_database:           true
+    enabled_modules: [default, sfGuardAuth, sfGuardUser]
+    
+  .actions:
+    login_module:    sfGuardAuth
+    login_action:    signin
+    secure_module:   sfGuardAuth
+    secure_action:   secure

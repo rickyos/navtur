@@ -23,6 +23,7 @@ Contacto:
 Persona:
   actAs: { Timestampable: ~ }
   columns:
+    user_id:           {type: integer}
     nombre:            {type: string(50), notnull: true}
     ap_paterno:        {type: string(30), notnull: true}
     ap_materno:        {type: string(30)}
@@ -38,4 +39,5 @@ Persona:
     fecha_nacimiento:  {type: date}
     is_active:         {type: boolean, notnull: true, default: true }
     foto:              {type: string(50)}   
-
+  relations:
+    sfGuardUser: {local: user_id, foreign: id, type: one, foreignAlias: Persona}

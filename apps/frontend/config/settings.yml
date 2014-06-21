@@ -24,6 +24,9 @@ test:
 
 all:
   .settings:
+    il8n: on
+    dfault_culture: es
+    
     # Form security secret (CSRF protection)
     csrf_secret:            d2f1d940817f44c93af4dcc9e6e14ae939a21a85
 
