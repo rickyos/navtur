@@ -1,14 +1,65 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <?php include_http_metas() ?>
-    <?php include_metas() ?>
-    <?php include_title() ?>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <?php include_stylesheets() ?>
-    <?php include_javascripts() ?>
-  </head>
-  <body>
-    <?php echo $sf_content ?>
-  </body>
+    <head>
+        <?php include_http_metas() ?>
+        <?php include_metas() ?>
+        <?php include_title() ?>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <?php include_stylesheets() ?>
+        <?php include_javascripts() ?>
+    </head>
+    <body>
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <div id="logo_text">
+                        <!-- class="logo_colour", allows you to change the colour of the text -->
+                        <h1><a href="index.html">CSS3<span class="logo_colour">_seascape_two</span></a></h1>
+                        <h2>Simple. Contemporary. Website Template.</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu" id="nav">
+                        <li class="selected"><a href="index.html">Home</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="page.html">A Page</a></li>
+                        <li><a href="another_page.html">Another Page</a></li>
+                        <li><a href="#">Example Drop Down</a>
+                            <ul>
+                                <li><a href="#">Drop Down One</a></li>
+                                <li><a href="#">Drop Down Two</a>
+                                    <ul>
+                                        <li><a href="#">Sub Drop Down One</a></li>
+                                        <li><a href="#">Sub Drop Down Two</a></li>
+                                        <li><a href="#">Sub Drop Down Three</a></li>
+                                        <li><a href="#">Sub Drop Down Four</a></li>
+                                        <li><a href="#">Sub Drop Down Five</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Drop Down Three</a></li>
+                                <li><a href="#">Drop Down Four</a></li>
+                                <li><a href="#">Drop Down Five</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+                <?php echo $sf_content ?>
+
+            <footer>
+                <p>Copyright &copy; CSS3_seascape_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+            </footer>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#images').kwicks({
+                    max: 600,
+                    spacing: 2
+                });
+                $('ul.sf-menu').sooperfish();
+            });
+        </script>
+    </body>
 </html>

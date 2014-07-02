@@ -1,0 +1,19 @@
+/*
+* Mismas reglas del admin generator
+*/
+body {
+    padding: 0px !important;
+    margin: 0 !important;
+    text-align: left;
+
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}

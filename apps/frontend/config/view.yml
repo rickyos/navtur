@@ -6,15 +6,15 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        NAVTUR
     #description:  symfony project
-    #keywords:     symfony, project
-    #language:     en
+    keywords:     navtur
+    language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [style.css]
 
-  javascripts:    []
+  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
 
   has_layout:     true
   layout:         layout
