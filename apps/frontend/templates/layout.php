@@ -26,7 +26,17 @@
                         <li><a href="another_page.html">Another Page</a></li>-->
                         <li><a href="#">Nosotros</a>
                             <ul>
-                                <li><a href="#">Mision y Vision</a></li>
+                                <li><a href="#">Misión</a></li>
+                                <li><a href="#">Visión</a></li>
+                                <!--                                <li><a href="#">Drop Down Three</a></li>
+                                <li><a href="#">Drop Down Four</a></li>
+                                <li><a href="#">Drop Down Five</a></li>-->
+                            </ul>
+                        </li>
+                       
+                        <li><a href="contact.php">Servicios</a>
+                            <ul>
+                                <li><a href="#">Cruceros Sociales</a></li>  
                                 <li><a href="#">Viajes</a>
                                     <ul>
                                         <li><a href="#">Semana Santa</a></li>
@@ -36,13 +46,9 @@
                                         <li><a href="#">Sub Drop Down Five</a></li>-->
                                     </ul>
                                 </li>
-<!--                                <li><a href="#">Drop Down Three</a></li>
-                                <li><a href="#">Drop Down Four</a></li>
-                                <li><a href="#">Drop Down Five</a></li>-->
-                            </ul>
+                            </ul>    
                         </li>
                         <li><a href="contact.php">Contacto</a></li>
-                        <li><a href="contact.php">Noticias</a></li>
                     </ul>
                 </nav>
             </header>
