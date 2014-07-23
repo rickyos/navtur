@@ -50,7 +50,7 @@
                 <?php echo $sf_content ?>
 
             <footer>
-                <p>Copyright &copy; CSS3_seascape_two | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+                <p>Copyright &copy; TAKEOFF | <a href="http://localhost:8001/frontend_dev.php/home">Diseño realizado por la empresa TAKEOFF, Av. Iturralde esq. San Salvador # 1281, Telf. (591)- 2-2246103</a></p>      
             </footer>
         </div>
         <script type="text/javascript">
