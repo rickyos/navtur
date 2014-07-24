@@ -17,6 +17,33 @@ class homeActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+  }
+  
+  public function executeMision(sfWebRequest $request)
+  {
+  }
+  
+  public function executeVision(sfWebRequest $request)
+  {
+  }
+  
+  public function executeContactos(sfWebRequest $request)
+  {
+  }
 
+  public function executeCrucerosSociales(sfWebRequest $request)
+  {
+  }
+  
+  public function executeSemanaSanta(sfWebRequest $request)
+  {
+  }
+  
+  public function executeTiwanaku(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCopacabana(sfWebRequest $request)
+  {
   }
 }

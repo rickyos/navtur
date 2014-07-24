@@ -15,7 +15,8 @@ generator:
       actions: ~
       fields:  ~
       list:    ~
-      filter:  ~
+      filter:  
+        display: [titulo, autor, fecha]
       form:    ~
       edit:    ~
       new:     ~

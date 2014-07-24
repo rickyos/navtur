@@ -7,56 +7,53 @@
         <link rel="shortcut icon" href="/favicon.ico" />
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
+        <title>
+          <?php if (!include_slot('title')): ?>
+                NAVTUR
+          <?php endif ?>
+      </title>
     </head>
     <body>
         <div id="main">
             <header>
                 <div id="logo">
                     <div id="logo_text">
-                        <!-- class="logo_colour", allows you to change the colour of the text -->
-                        <h1><a href="index.html">Navtur<span class="logo_colour"> - Bolivia</span></a></h1>
+                        <h1><?php echo link_to('Navtur', 'home/index')?><a><span class="logo_colour"> - Bolivia</span></a></h1>
                         <h2>Viajes en buque para Bolivia</h2>
                     </div>
                 </div>
                 <nav>
                     <ul class="sf-menu" id="nav">
-                        <li class="selected"><a href="index.html">Inicio</a></li>
-<!--                        <li><a href="examples.html">Examples</a></li>
-                        <li><a href="page.html">A Page</a></li>
-                        <li><a href="another_page.html">Another Page</a></li>-->
-                        <li><a href="#">Nosotros</a>
+                        <li class="selected"><?php echo link_to('Inicio', 'home/index')?></li>
+                        <li><a href=''>Nosotros</a>
                             <ul>
-                                <li><a href="#">Misión</a></li>
-                                <li><a href="#">Visión</a></li>
-                                <!--                                <li><a href="#">Drop Down Three</a></li>
-                                <li><a href="#">Drop Down Four</a></li>
-                                <li><a href="#">Drop Down Five</a></li>-->
+                                <li><?php echo link_to('Misión', 'home/mision') ?></li>
+                                <li><?php echo link_to('Visión', 'home/vision') ?></li>
                             </ul>
                         </li>
-                       
-                        <li><a href="contact.php">Servicios</a>
+
+                        <li><a href=''>Servicios</a>
                             <ul>
-                                <li><a href="#">Cruceros Sociales</a></li>  
-                                <li><a href="#">Viajes</a>
+                                <li><?php echo link_to('Cruceros Sociales', 'home/crucerosSociales')?></li>  
+                                <li><a href=''>Viajes</a>
                                     <ul>
-                                        <li><a href="#">Semana Santa</a></li>
-                                        <li><a href="#">Tiwanaku</a></li>
-                                        <li><a href="#">Copacabana</a></li>
-<!--                                        <li><a href="#">Sub Drop Down Four</a></li>
-                                        <li><a href="#">Sub Drop Down Five</a></li>-->
+                                        <li><?php echo link_to('Semana Santa','home/semanaSanta')?></li>
+                                        <li><?php echo link_to('Tiwanaku','home/tiwanaku')?></li>
+                                        <li><?php echo link_to('Copacabana','home/copacabana')?></li>
                                     </ul>
                                 </li>
                             </ul>    
                         </li>
-                        <li><a href="contact.php">Contacto</a></li>
+                        <li><?php echo link_to('Contacto', 'contactos/new')?></li>
+                        <li><a href="/backend.php">Login</a></li>
                     </ul>
                 </nav>
             </header>
-            
-                <?php echo $sf_content ?>
+
+            <?php echo $sf_content ?>
 
             <footer>
-                <p>Copyright &copy; TAKEOFF | <a href="http://localhost:8001/frontend_dev.php/home">Diseño realizado por la empresa TAKEOFF, Av. Iturralde esq. San Salvador # 1281, Telf. (591)- 2-2246103</a></p>      
+                <p>Powered by <a href="http://www.takeoff.com.bo/">TAKEOFF </a></p>      
             </footer>
         </div>
         <script type="text/javascript">

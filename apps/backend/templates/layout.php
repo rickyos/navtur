@@ -12,11 +12,42 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-    <?php if($sf_user->isAuthenticated()==true):?>
-    <?php echo link_to('Salir','sfGuardAuth/Signout', array ('title'=>'Cerrar sesión')) ?>
-    <?php endif ?>
   </head>
-  <body>
-    <?php echo $sf_content ?>
-  </body>
+    <body>
+        <div id='menu-back'>
+            <?php if($sf_user->isAuthenticated()==true):?>
+            <div id="logo-back">
+                <div id="logo_text">
+                    <h1><?php echo link_to('Navtur', 'inicio/index')?><a><span class="logo_colour"> - Sistema Administrativo</span></a></h1>
+                </div>
+            </div>
+            <div>
+                <ul class="sf-menu" id="nav">
+                    <li><?php echo link_to('Noticias', 'noticias/index')?></li>
+                    <li><?php echo link_to('Contactos', 'contactos/index')?></li>
+                </ul>
+            </div>
+            <div id='info_user_text'>
+                <h6>Usuario: <?php echo $sf_user->getUsername(); ?></h6>
+                <h6>Nombre: <?php echo $sf_user->getGuardUser()->getPersona();?></h6>
+                <?php echo link_to('Salir','sfGuardAuth/Signout', array ('title'=>'Cerrar sesión')) ?>
+            </div>
+            <?php endif ?>                    
+        </div>
+        <div id="main">
+            <?php echo $sf_content ?>
+        </div>
+            <footer id='footer-back'>
+                <p>Powered by <a href="http://www.takeoff.com.bo/">TAKEOFF </a></p>      
+            </footer>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#images').kwicks({
+                    max: 600,
+                    spacing: 2
+                });
+                $('ul.sf-menu').sooperfish();
+            });
+        </script>
+    </body>
 </html>

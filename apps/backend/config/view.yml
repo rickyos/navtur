@@ -12,9 +12,9 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [main.css, style.css]
 
-  javascripts:    []
+  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
 
   has_layout:     true
   layout:         layout
