@@ -25,6 +25,7 @@
                 <ul class="sf-menu" id="nav">
                     <li><?php echo link_to('Noticias', 'noticias/index')?></li>
                     <li><?php echo link_to('Contactos', 'contactos/index')?></li>
+                    <li><a href="/frontend.php">Ir a la Página</a></li>
                 </ul>
             </div>
             <div id='info_user_text'>
