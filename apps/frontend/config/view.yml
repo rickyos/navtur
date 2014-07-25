@@ -12,9 +12,13 @@ default:
     language:     en
     #robots:       index, follow
 
-  stylesheets:    [style.css]
+#  stylesheets:    [style.css]
+#
+#  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
 
-  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
+  stylesheets:    [coin-slider.css, style.css]
+
+  javascripts:    [coin-slider.min.js, cufon-titillium-250.js, cufon-yui.js, jquery-1.4.2.min.js, script.js]
 
   has_layout:     true
   layout:         layout

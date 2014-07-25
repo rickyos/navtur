@@ -46,4 +46,8 @@ class homeActions extends sfActions
   public function executeCopacabana(sfWebRequest $request)
   {
   }
+  
+  public function executeAcercaDe(sfWebRequest $request)
+  {
+  }
 }

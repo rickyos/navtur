@@ -1,3 +1,3 @@
-<h1>New Contacto</h1>
+<h2>Contactanos</h2>
 
 <?php include_partial('form', array('form' => $form)) ?>
