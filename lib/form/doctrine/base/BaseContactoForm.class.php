@@ -17,25 +17,21 @@ abstract class BaseContactoForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'         => new sfWidgetFormInputHidden(),
       'nombre'     => new sfWidgetFormInputText(),
-      'ap_paterno' => new sfWidgetFormInputText(),
-      'ap_materno' => new sfWidgetFormInputText(),
-      'telefono'   => new sfWidgetFormInputText(),
       'email'      => new sfWidgetFormInputText(),
-      'direccion'  => new sfWidgetFormInputText(),
-      'empresa'    => new sfWidgetFormInputText(),
+      'telefono'   => new sfWidgetFormInputText(),
+      'asunto'     => new sfWidgetFormInputText(),
+      'mensaje'    => new sfWidgetFormTextarea(),
       'created_at' => new sfWidgetFormDateTime(),
       'updated_at' => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'nombre'     => new sfValidatorString(array('max_length' => 255)),
-      'ap_paterno' => new sfValidatorString(array('max_length' => 255)),
-      'ap_materno' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'telefono'   => new sfValidatorString(array('max_length' => 20)),
-      'email'      => new sfValidatorString(array('max_length' => 100)),
-      'direccion'  => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'empresa'    => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'nombre'     => new sfValidatorString(array('max_length' => 200)),
+      'email'      => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'telefono'   => new sfValidatorString(array('max_length' => 20, 'required' => false)),
+      'asunto'     => new sfValidatorString(array('max_length' => 100, 'required' => false)),
+      'mensaje'    => new sfValidatorString(array('max_length' => 2500, 'required' => false)),
       'created_at' => new sfValidatorDateTime(),
       'updated_at' => new sfValidatorDateTime(),
     ));

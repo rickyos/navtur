@@ -16,7 +16,7 @@ generator:
       fields:  ~
       list:    ~
       filter:  
-        display: [empresa, nombre, ap_paterno, ap_materno]
+        display: [nombre]
       form:    ~
       edit:    ~
       new:     ~

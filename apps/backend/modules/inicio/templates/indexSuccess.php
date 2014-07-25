@@ -2,13 +2,13 @@
     <ul id="images">
         <li><img src="/images/1.jpg" width="600" height="300"/></li>
         <li><img src="/images/2.jpg" width="600" height="300"/></li>
-        <li><img src="/images/3.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f7.jpg" width="600" height="300"/></li>
         <li><img src="/images/4.jpg" width="600" height="300"/></li>
-        <li><img src="/images/5.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f8.jpg" width="600" height="300"/></li>
         <li><img src="/images/6.jpg" width="600" height="300"/></li>
     </ul>
     <div class="content">
-        <h1>Bienvenido al sistema administrativo de NAVTUR - BOLIVIA</h1>
+        <h2>Bienvenido al sistema administrativo de NAVTUR - BOLIVIA</h2>
         <p>Desde donde podrá administrar las diferentes noticias y novedades que
            ofrece, las cuales seran reflejadas en la página oficial visitada 
            por los clientes.

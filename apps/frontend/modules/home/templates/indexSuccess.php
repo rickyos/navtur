@@ -1,11 +1,11 @@
 <div id="site_content">
     <ul id="images">
-        <li><img src="/images/1.jpg" width="600" height="300"/></li>
-        <li><img src="/images/2.jpg" width="600" height="300"/></li>
-        <li><img src="/images/3.jpg" width="600" height="300"/></li>
-        <li><img src="/images/4.jpg" width="600" height="300"/></li>
-        <li><img src="/images/5.jpg" width="600" height="300"/></li>
-        <li><img src="/images/6.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f1.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f2.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f3.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f4.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f5.jpg" width="600" height="300"/></li>
+        <li><img src="/images/f6.jpg" width="600" height="300"/></li>
     </ul>
     <div id="sidebar_container">
         <div class="sidebar">

@@ -1,6 +1,6 @@
 #sf_admin_container a
 {
-  color: #464646;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -12,17 +12,29 @@
 
 #sf_admin_container h1
 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+    background: none repeat scroll 0 0 #F5F5F2;
+    border-bottom: 1px solid #EEEEEE;
+    border-radius: 7px 7px 7px 7px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 #sf_admin_container th
 {
-/*  background-color: #e7eef6;*/
-/*background-color: #F5A9A9;*/
-  background-color: #FFCCCC;
+  background-color: #D3DFD1;
   white-space: nowrap;
+}
+
+td.sf_admin_text
+{
+    width: 150px;
 }
 
 #sf_admin_container td, #sf_admin_container th
@@ -31,7 +43,8 @@
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   text-align: left;
-/*  vertical-align: top;*/
+  /*vertical-align: top;*/
+  /*min-width: 150px;*/
 }
 
 #sf_admin_container tr
@@ -41,21 +54,22 @@
   border-right: 1px solid #ddd;
 }
 
-#sf_admin_container ul.error_list
+#sf_admin_container ul.error_list, .tablas_form ul.error_list
 {
   margin: 0;
   margin-bottom: 7px;
-  color: #d33;
+  /*color: #d33;*/
   border: none;
-  background-color: #f33;
+  /*background-color: #f33;*/
 }
 
-#sf_admin_container ul.error_list li
+#sf_admin_container ul.error_list li, .tbl-form-decision ul.error_list li
 {
   padding: 4px;
   padding-left: 25px;
   list-style: none;
-  color: #fff;
+  /*color: #fff;*/
+  color: #FF3333;
   background: url(../images/error.png) no-repeat 4px 4px;
 }
 
@@ -104,13 +118,20 @@
 
 #sf_admin_bar
 {
-  top: 25px;
-  right: 150px;
-  width: auto;
-  float: right;
-  margin-left: 20px;
+    /*float: right;
+    margin-left: 20px;
+    position: absolute;
+    /*right: 300px;*/
+    top: 25px;
+    /*left: 350px;*/
+    right: 150px;
+    width: auto;
 }
-
+.sf_admin_filter
+{
+    width: auto;
+    font-size: 10px;
+}
 .sf_admin_pagination
 {
   float: right;
@@ -188,8 +209,8 @@
   background: url(../images/error.png) no-repeat 10px 4px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #f33;
-  color: #fff;
+/*  background-color: #f33;*/
+  color: #f33;
 }
 
 #sf_admin_container .sf_admin_row_0 td
@@ -205,7 +226,7 @@
 {
   padding: 3px;
   color: #333;
-  background-color: #ccf;
+  background-color: #D3DFD1;
   font-size: 11px;
   margin: 0;
 }
@@ -275,3 +296,11 @@
   text-align: center;
 }
 
+.sf_admin_list table 
+{
+    width: 100%;
+}
+.sf_admin_list table td, .sf_admin_list table th
+{
+    width: auto;
+}

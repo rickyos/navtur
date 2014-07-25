@@ -28,20 +28,6 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['ap_paterno']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['ap_paterno']->renderError() ?>
-          <?php echo $form['ap_paterno'] ?>
-        </td>
-      </tr>
-      <tr>
-        <th><?php echo $form['ap_materno']->renderLabel() ?></th>
-        <td>
-          <?php echo $form['ap_materno']->renderError() ?>
-          <?php echo $form['ap_materno'] ?>
-        </td>
-      </tr>
-      <tr>
         <th><?php echo $form['telefono']->renderLabel() ?></th>
         <td>
           <?php echo $form['telefono']->renderError() ?>
@@ -56,17 +42,17 @@
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['direccion']->renderLabel() ?></th>
+        <th><?php echo $form['asunto']->renderLabel() ?></th>
         <td>
-          <?php echo $form['direccion']->renderError() ?>
-          <?php echo $form['direccion'] ?>
+          <?php echo $form['asunto']->renderError() ?>
+          <?php echo $form['asunto'] ?>
         </td>
       </tr>
       <tr>
-        <th><?php echo $form['empresa']->renderLabel() ?></th>
+        <th><?php echo $form['mensaje']->renderLabel() ?></th>
         <td>
-          <?php echo $form['empresa']->renderError() ?>
-          <?php echo $form['empresa'] ?>
+          <?php echo $form['mensaje']->renderError() ?>
+          <?php echo $form['mensaje'] ?>
         </td>
       </tr>
     </tbody>
