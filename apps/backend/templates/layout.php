@@ -39,7 +39,7 @@
             <?php echo $sf_content ?>
         </div>
             <footer id='footer-back'>
-                <p>Powered by <a href="http://www.takeoff.com.bo/">TAKEOFF </a></p>      
+                <p id="footer-back-text">Powered by <a href="http://www.takeoff.com.bo/">TAKEOFF </a></p>      
             </footer>
         <script type="text/javascript">
             $(document).ready(function() {
