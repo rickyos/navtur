@@ -54,7 +54,7 @@
           <h2 class="star"><span>Servicios Frecuentes</span></h2>
           <div class="clr"></div>
           <ul class="sb_menu">
-              <li><?php echo link_to('Tiwanaku', 'home/tiwanaku')?></li>
+              <li><?php echo link_to('Cruceros Sociales', 'home/crucerosSociales')?></li>
               <li><?php echo link_to('Copacabana', 'home/copacabana')?></li>
               <li><?php echo link_to('Semana Santa', 'home/semanaSanta')?></li>
           </ul>
