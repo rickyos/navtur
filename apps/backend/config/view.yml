@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css, main-backend.css, style.css]
 
-  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
+  javascripts:    [jquery.js, jquery.kwicks-1.5.1.js]
 
   has_layout:     true
   layout:         layout

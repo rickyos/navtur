@@ -13,10 +13,24 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
+      fields:  
+        nombre:     {label: 'NOMBRE'}
+        email:      {label: 'EMAIL'}  
+        telefono:   {label: 'TELEFONO'}  
+        asunto:     {label: 'ASUNTO'}  
+        mensaje:    {label: 'MENSAJE'}  
+        created_at: {label: 'FECHA', date_format: 'dd/MM/yyyy'}
+      list:    
+        title: Estas Personas y Empresas quieren Contactarte
+        display: [created_at, nombre,	email, telefono, asunto]
+        object_actions: 
+          _edit: ~
+        actions: []
       filter:  
         display: [nombre]
       form:    ~
-      edit:    ~
+      edit:    
+        title: Este es el mensaje que te mandó
+        actions:
+          _list: ~
       new:     ~

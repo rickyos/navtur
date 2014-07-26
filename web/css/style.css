@@ -34,6 +34,12 @@ p {
 	margin:8px 0;
 	padding:0 0 8px 0;
 }
+
+#noti-cuerpo {
+	margin:8px 0;
+	padding:0 0 8px 0;
+        min-height: 210px;
+}
 a {
 	color:#0082ae;
 	text-decoration:underline;

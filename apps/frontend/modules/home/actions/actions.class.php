@@ -17,6 +17,9 @@ class homeActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+      $this->noticias = Doctrine::getTable('Noticia')
+      ->createQuery('a')
+      ->execute();
   }
   
   public function executeMision(sfWebRequest $request)

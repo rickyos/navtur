@@ -1202,8 +1202,8 @@ table {
 }
 
 table tr th, table tr td { 
-  background: #FFCCCC;
-  color: #444;
+  background: #00AAD5;
+  color: #fff;
   padding: 7px 4px;
   text-align: left;
 }
