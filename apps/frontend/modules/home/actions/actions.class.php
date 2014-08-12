@@ -50,4 +50,36 @@ class homeActions extends sfActions
   public function executeAcercaDe(sfWebRequest $request)
   {
   }
+  
+  public function executeCruceros(sfWebRequest $request)
+  {
+  }
+  
+  public function executeAnoNuevo(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroConfraternidad(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroConfraternidadTodo(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroFerroviarioLac(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroMama(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroPapa(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCrucerosCorporativos(sfWebRequest $request)
+  {
+  }
 }
