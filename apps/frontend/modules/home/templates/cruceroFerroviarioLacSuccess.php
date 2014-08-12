@@ -1,6 +1,11 @@
 <div class ="servicios">
     <h2><span>Cruceros </span> Turístico Ferroviario Lacustre (Todo Incluido)</h2>
     <div class="clr"></div><br>
+    <div class="imagen_paquetes">
+        <img src="/images/ferrov1.jpg"/>
+        <img src="/images/ferrov2.jpg"/>
+        <img src="/images/ferrov3.jpg"/>
+    </div>
     <strong>Frecuencia: </strong> 2do Domingo de cada mes<br>
     <strong>Duración: </strong>  1 Día <br>
     <h3><strong>Programa:</strong></h3>
@@ -26,7 +31,7 @@
             <td>  240,00 Bs</td>
         </tr>
     </table>
-
+    <br>    
     <h3><strong>Itinerario de actividades </strong></h3>
     <table align="center">
 

@@ -3,6 +3,9 @@
     <h2> 2 Días/1 noche </h2>
     <div class="clr"></div>
     <br>
+    <div class="imagen_paquetes">
+        <img src="/images/anonuevo.jpg"/>
+    </div>
     <strong>Fecha: </strong> 31 Diciembre - 1 de Enero  <br>
     <strong>Duración: </strong>  2 Días/1 noche  <br>
     <h3><strong>Programa:</strong></h3>

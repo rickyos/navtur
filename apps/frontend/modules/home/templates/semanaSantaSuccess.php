@@ -3,6 +3,12 @@
     <h2> 2 Días/1 noche </h2>
     <div class="clr"></div>
     <br>
+    <div class="clr"></div>
+    <div class="imagen_paquetes">
+        <img src="/images/confra3.jpg"/>
+        <img src="/images/confra4.jpg"/>
+        
+    </div>
     <strong>Fecha: </strong> Semana Santa (viernes  y sábado) <br>
     <strong>Duración: </strong>  2 Días/1 noche  <br>
     <h3><strong>Programa:</strong></h3>

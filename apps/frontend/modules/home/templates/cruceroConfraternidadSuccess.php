@@ -1,7 +1,11 @@
 <div class ="servicios">
     <h2><span>Cruceros </span> de Confraternidad (Sólo Búque) </h2><br>
     <div class="clr"></div>
-    
+    <div class="imagen_paquetes">
+        <img src="/images/confra1.jpg"/>
+        <img src="/images/confra2.jpg"/>
+        
+    </div>
     <strong>Frecuencia: </strong> Disponibilidad de acuerdo a calendario<br>
     <strong>Duración: </strong>  1 Día<br>
     <h3><strong>Programa:</strong></h3>

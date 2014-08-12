@@ -1,9 +1,11 @@
 <div class ="servicios">
     <h2><span>Cruceros </span> Sociales</h2>
     <div class="clr"></div>
-    <h4><strong>Matrimonios, 15 años, Aniversarios</strong></h4>
+    <h4><strong>Matrimonios - 15 años - Aniversarios</strong></h4>
     <div class="imagen_paquetes">
-        <img src="/images/slide1.jpg"/>
+        <img src="/images/matrimonio1.jpg"/>
+        <img src="/images/matrimonio2.jpg"/>
+        <img src="/images/matrimonio3.jpg"/>
     </div>
          
     <strong>Frecuencia: </strong> Disponibilidad de acuerdo a calendario<br>

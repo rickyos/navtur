@@ -3,6 +3,11 @@
     <h2> Regala a papá una experiencia diferente </h2>
     <div class="clr"></div>
     <br>
+    <div class="imagen_paquetes">
+        <img src="/images/parapapa1.jpg"/>
+        <img src="/images/parapapa2.jpg"/>
+        <img src="/images/parapapa3.jpg"/>
+    </div>
     <strong>Fecha: </strong>   <br>
     <strong>Duración: </strong>  1 día <br>
     <h3><strong>Programa:</strong></h3>

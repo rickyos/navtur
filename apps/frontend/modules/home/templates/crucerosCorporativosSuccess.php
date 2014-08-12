@@ -1,7 +1,12 @@
 <div class ="servicios">
     <h2><span>Cruceros </span> Corporativos</h2>
     <div class="clr"></div>
-    <h4><strong>REUNIONES – SEMINARIOS – CONFERENCIAS(Sólo Buque)</strong></h4>
+    <h4><strong>Reuniones – Seminarios – Conferencias(Sólo Buque)</strong></h4>
+    <div class="imagen_paquetes">
+        
+        <img src="/images/seminario1.jpg"/>
+        
+    </div>
     <strong>Frecuencia: </strong> Disponibilidad de acuerdo a calendario<br>
     <strong>Duración: </strong>  1 Día y 2 Días/1 Noche <br>
     <h3><strong>Programa:</strong></h3>

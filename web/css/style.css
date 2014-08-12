@@ -511,8 +511,9 @@ a {
 .imagen_paquetes {
     padding: 5px 10px; 
     margin:0 auto;
-    width:40%;
+    width:30%;
     float: right;
+    
 }
 
 .imagen_paquetes img {
