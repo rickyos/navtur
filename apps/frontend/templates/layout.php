@@ -32,9 +32,9 @@
                     <div class="clr"></div>
                     <div class="slider">
                         <div id="coin-slider"> 
-                            <img src="images/slide1.jpg" width="960" height="360" alt="" />
-                            <img src="images/slide2.jpg" width="960" height="360" alt="" />
-                            <img src="images/slide3.jpg" width="960" height="360" alt="" />
+                            <img src="/images/slide1.jpg" width="960" height="360" alt="" />
+                            <img src="/images/slide2.jpg" width="960" height="360" alt="" />
+                            <img src="/images/slide3.jpg" width="960" height="360" alt="" />
                         </div>
                         <div class="clr"></div>
                     </div>
