@@ -1,7 +1,13 @@
 <div class ="servicios">
     <h2><span>Cruceros </span> Sociales</h2>
     <div class="clr"></div>
-    <strong>Matrimonios, 15 años, Aniversarios</strong><br>
+    <h4><strong>Matrimonios - 15 años - Aniversarios</strong></h4>
+    <div class="imagen_paquetes">
+        <img src="/images/matrimonio1.jpg"/>
+        <img src="/images/matrimonio2.jpg"/>
+        <img src="/images/matrimonio3.jpg"/>
+    </div>
+         
     <strong>Frecuencia: </strong> Disponibilidad de acuerdo a calendario<br>
     <strong>Duración: </strong>  1 Día<br>
     <h3><strong>Programa:</strong></h3>
@@ -25,10 +31,10 @@
         <tr align="center">
             <td>5</td>
             <td><strong>   </strong></td>
-            <td>9600</td>
+            <td>9.600,00 Bs</td>
         </tr>
-   </table>
-   
+    </table>
+
     <h3><strong>Servicios Adicionales</strong></h3>
     <h3><strong>Almuerzos</strong></h3>
     <table align="center">
@@ -37,7 +43,7 @@
             <td><strong>   </strong></td>
             <td><strong>Precio x pax en  Bs.</strong></td>
         </tr>
-        
+
         <tr align="left">
             <td><strong>Paquete Básico. Buffet</strong>
                 <ul type="square">
@@ -51,11 +57,11 @@
                 </ul> </td>
             <td><strong>   </strong></td>
             <td align="center">70 Bs</td>
-                       
+
         </tr>
-        
+
         <tr align="left">
-        <td><strong>Paquete Completo Buffet</strong>
+            <td><strong>Paquete Completo Buffet</strong>
                 <ul type="square">
                     <li> Dos  variedades  de  bocaditos  ( a elegir  según  menú)</li>
                     <li> Buffet  con tres  carnes  y sus respectivas  guarniciones (Degustación para  4 personas)</li>
@@ -75,9 +81,64 @@
             <td><strong>   </strong></td>
             <td align="center">185 Bs</td>
         </tr>
-   </table>
-    
-</tr>
+    </table>
 
+    <h3><strong>Itinerario de actividades (Sujeto a Modificaciones)</strong></h3>
+    <table align="center">
+
+
+        <tr align="left">
+            <td align="center"><strong>Itinerario</strong></td>
+            <td align="center"><strong>Hora</strong></td>
+        </tr>
+
+        <tr align="left">
+            <td>Salida de La Paz </td>
+            <td align="center"> 10:00 a.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Llegada al Puerto de Guaqui </td>
+            <td align="center"> 12:00 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Embarque al Buque Multipropósito </td>
+            <td align="center"> 12:30 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Zarpe Puerto Guaqui </td>
+            <td align="center"> 13:00 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Almuerzo Buffet </td>
+            <td align="center"> 14:00 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Atraque Puerto Guaqui </td>
+            <td align="center"> 18:00 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Fiesta en Puerto </td>
+            <td align="center"> 22:00 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Inicio retorno La Paz </td>
+            <td align="center"> 22:15 p.m.</td>
+
+        </tr>
+        <tr align="left">
+            <td>Llegada a La Paz </td>
+            <td align="center"> 00:00 a.m.</td>
+
+        </tr>
+
+    </table>
+    <br>
 
 </div>
