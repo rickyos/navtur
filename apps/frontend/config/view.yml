@@ -16,9 +16,9 @@ default:
 #
 #  javascripts:    [jquery.js, jquery.easing-sooper.js, jquery.sooperfish.js, jquery.kwicks-1.5.1.js, modernizr-1.5.min.js]
 
-  stylesheets:    [coin-slider.css, style.css]
+  stylesheets:    [style.css, coin-slider.css]
 
-  javascripts:    [coin-slider.min.js, cufon-titillium-250.js, cufon-yui.js, jquery-1.4.2.min.js, script.js]
+  javascripts:    [cufon-yui.js, cufon-titillium-250.js, jquery-1.4.2.min.js, script.js, coin-slider.min.js]
 
   has_layout:     true
   layout:         layout

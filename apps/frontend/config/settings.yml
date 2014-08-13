@@ -3,7 +3,7 @@
 
 prod:
   .settings:
-    no_script_name:         true
+    no_script_name:         false
     logging_enabled:        false
 
 dev:
@@ -25,7 +25,7 @@ test:
 all:
   .settings:
     il8n: on
-    dfault_culture: es
+    default_culture: es_ES
     
     # Form security secret (CSRF protection)
     csrf_secret:            d2f1d940817f44c93af4dcc9e6e14ae939a21a85
