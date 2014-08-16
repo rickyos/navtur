@@ -85,4 +85,12 @@ class homeActions extends sfActions
   public function executeCrucerosCorporativos(sfWebRequest $request)
   {
   }
+  
+  public function executeCruceroEducativo(sfWebRequest $request)
+  {
+  }
+  
+  public function executeCruceroEducativoTodo(sfWebRequest $request)
+  {
+  }
 }
