@@ -147,7 +147,8 @@ abstract class BasePersona extends sfDoctrineRecord
              'local' => 'user_id',
              'foreign' => 'id'));
 
-        $timestampable0 = new Doctrine_Template_Timestampable();
+        $timestampable0 = new Doctrine_Template_Timestampable(array(
+             ));
         $this->actAs($timestampable0);
     }
 }

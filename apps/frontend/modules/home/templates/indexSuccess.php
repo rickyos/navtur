@@ -6,7 +6,7 @@
     <div class="img"><img src=<?php echo $noticia->getImagen();?> width="200" height="210" alt="" class="fl" /></div>
     <div class="post_content">
         <p id='noti-cuerpo'><?php echo $noticia->getCuerpo(); ?></p>
-        <p class="spec"><a href="#" class="rm">Read more</a></p>
+        <p class="spec"><a href="home/<?php echo $noticia->Servicio->getPaginaWeb();?>" class="rm">Ver el Servicio</a></p>
     </div>
     <div class="clr"></div>
 </div>

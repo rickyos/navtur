@@ -1,6 +1,7 @@
 CREATE TABLE contacto (id BIGSERIAL, nombre VARCHAR(200) NOT NULL, email VARCHAR(50), telefono VARCHAR(20), asunto VARCHAR(100), mensaje VARCHAR(2500), created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
-CREATE TABLE noticia (id BIGSERIAL, titulo VARCHAR(255) NOT NULL, cuerpo TEXT NOT NULL, imagen VARCHAR(255) NOT NULL, autor VARCHAR(255) NOT NULL, lugar VARCHAR(255) NOT NULL, fecha DATE NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
+CREATE TABLE noticia (id BIGSERIAL, titulo VARCHAR(255) NOT NULL, cuerpo TEXT NOT NULL, imagen VARCHAR(255) NOT NULL, autor VARCHAR(255) NOT NULL, lugar VARCHAR(255) NOT NULL, fecha DATE NOT NULL, servicio_id BIGINT, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
 CREATE TABLE persona (id BIGSERIAL, user_id BIGINT, nombre VARCHAR(50) NOT NULL, ap_paterno VARCHAR(30) NOT NULL, ap_materno VARCHAR(30), ap_casada VARCHAR(30), ci VARCHAR(14) NOT NULL UNIQUE, expedido VARCHAR(2) NOT NULL, direccion VARCHAR(255) NOT NULL, telefono VARCHAR(20), celular VARCHAR(20) NOT NULL, fax VARCHAR(20), casilla VARCHAR(10), email VARCHAR(255), fecha_nacimiento DATE, is_active BOOLEAN DEFAULT 'true' NOT NULL, foto VARCHAR(50), created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
+CREATE TABLE servicio (id BIGSERIAL, nombre VARCHAR(255) NOT NULL, pagina_web VARCHAR(255) NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
 CREATE TABLE sf_guard_forgot_password (id BIGSERIAL, user_id BIGINT NOT NULL, unique_key VARCHAR(255), expires_at TIMESTAMP NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
 CREATE TABLE sf_guard_group (id BIGSERIAL, name VARCHAR(255) UNIQUE, description VARCHAR(1000), created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(id));
 CREATE TABLE sf_guard_group_permission (group_id BIGINT, permission_id BIGINT, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(group_id, permission_id));
@@ -10,6 +11,7 @@ CREATE TABLE sf_guard_user (id BIGSERIAL, persona_id BIGINT, username VARCHAR(12
 CREATE TABLE sf_guard_user_group (user_id BIGINT, group_id BIGINT, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(user_id, group_id));
 CREATE TABLE sf_guard_user_permission (user_id BIGINT, permission_id BIGINT, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP NOT NULL, PRIMARY KEY(user_id, permission_id));
 CREATE INDEX is_active_idx ON sf_guard_user (is_active);
+ALTER TABLE noticia ADD CONSTRAINT noticia_servicio_id_servicio_id FOREIGN KEY (servicio_id) REFERENCES servicio(id) NOT DEFERRABLE INITIALLY IMMEDIATE;
 ALTER TABLE persona ADD CONSTRAINT persona_user_id_sf_guard_user_id FOREIGN KEY (user_id) REFERENCES sf_guard_user(id) NOT DEFERRABLE INITIALLY IMMEDIATE;
 ALTER TABLE sf_guard_forgot_password ADD CONSTRAINT sf_guard_forgot_password_user_id_sf_guard_user_id FOREIGN KEY (user_id) REFERENCES sf_guard_user(id) ON DELETE CASCADE NOT DEFERRABLE INITIALLY IMMEDIATE;
 ALTER TABLE sf_guard_group_permission ADD CONSTRAINT sf_guard_group_permission_permission_id_sf_guard_permission_id FOREIGN KEY (permission_id) REFERENCES sf_guard_permission(id) ON DELETE CASCADE NOT DEFERRABLE INITIALLY IMMEDIATE;

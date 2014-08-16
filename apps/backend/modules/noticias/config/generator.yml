@@ -14,12 +14,13 @@ generator:
     config:
       actions: ~
       fields:  
-        titulo: {label: 'TITULO'}
-        cuerpo: {label: 'CUERPO'}
-        imagen: {label: 'IMAGEN'}
-        autor:  {label: 'AUTOR'}
-        lugar:  {label: 'LUGAR'}
-        fecha:  {label: 'FECHA', date_format: 'dd/MM/yyyy'}
+        titulo:      {label: 'TITULO'}
+        cuerpo:      {label: 'CUERPO'}
+        imagen:      {label: 'IMAGEN'}
+        autor:       {label: 'AUTOR'}
+        lugar:       {label: 'LUGAR'}
+        fecha:       {label: 'FECHA', date_format: 'dd/MM/yyyy'}
+        servicio_id: {label: 'SERVICIO QUE RELACIONADO'}
       list:    
         title: Todas las noticias registradas
         display: [fecha, titulo, autor, lugar]
@@ -28,7 +29,7 @@ generator:
         display: [titulo, autor, fecha]
       form:    
         display:
-          Esta noticia se mostrara en la página web: [titulo, autor, fecha, lugar, imagen, cuerpo]
+          Esta noticia se mostrara en la página web: [servicio_id, titulo, autor, fecha, lugar, imagen, cuerpo]
       edit:    
         title: Editar Noticia %%titulo%%
         actions: ~

@@ -11,19 +11,25 @@
  * @property string $autor
  * @property string $lugar
  * @property date $fecha
+ * @property integer $servicio_id
+ * @property Servicio $Servicio
  * 
- * @method string  getTitulo() Returns the current record's "titulo" value
- * @method string  getCuerpo() Returns the current record's "cuerpo" value
- * @method string  getImagen() Returns the current record's "imagen" value
- * @method string  getAutor()  Returns the current record's "autor" value
- * @method string  getLugar()  Returns the current record's "lugar" value
- * @method date    getFecha()  Returns the current record's "fecha" value
- * @method Noticia setTitulo() Sets the current record's "titulo" value
- * @method Noticia setCuerpo() Sets the current record's "cuerpo" value
- * @method Noticia setImagen() Sets the current record's "imagen" value
- * @method Noticia setAutor()  Sets the current record's "autor" value
- * @method Noticia setLugar()  Sets the current record's "lugar" value
- * @method Noticia setFecha()  Sets the current record's "fecha" value
+ * @method string   getTitulo()      Returns the current record's "titulo" value
+ * @method string   getCuerpo()      Returns the current record's "cuerpo" value
+ * @method string   getImagen()      Returns the current record's "imagen" value
+ * @method string   getAutor()       Returns the current record's "autor" value
+ * @method string   getLugar()       Returns the current record's "lugar" value
+ * @method date     getFecha()       Returns the current record's "fecha" value
+ * @method integer  getServicioId()  Returns the current record's "servicio_id" value
+ * @method Servicio getServicio()    Returns the current record's "Servicio" value
+ * @method Noticia  setTitulo()      Sets the current record's "titulo" value
+ * @method Noticia  setCuerpo()      Sets the current record's "cuerpo" value
+ * @method Noticia  setImagen()      Sets the current record's "imagen" value
+ * @method Noticia  setAutor()       Sets the current record's "autor" value
+ * @method Noticia  setLugar()       Sets the current record's "lugar" value
+ * @method Noticia  setFecha()       Sets the current record's "fecha" value
+ * @method Noticia  setServicioId()  Sets the current record's "servicio_id" value
+ * @method Noticia  setServicio()    Sets the current record's "Servicio" value
  * 
  * @package    navtur
  * @subpackage model
@@ -64,12 +70,20 @@ abstract class BaseNoticia extends sfDoctrineRecord
              'type' => 'date',
              'notnull' => true,
              ));
+        $this->hasColumn('servicio_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $timestampable0 = new Doctrine_Template_Timestampable();
+        $this->hasOne('Servicio', array(
+             'local' => 'servicio_id',
+             'foreign' => 'id'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable(array(
+             ));
         $this->actAs($timestampable0);
     }
 }

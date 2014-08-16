@@ -1,41 +1,49 @@
 Noticia:
-  actAs: { Timestampable: ~ }
+  actAs: [Timestampable]
   columns:
-    titulo:     {type: string(255), notnull: true}
-    cuerpo:     {type: string(10000), notnull: true}
-    imagen:     {type: string(255), notnull: true}
-    autor:      {type: string(255), notnull: true}
-    lugar:      {type: string(255), notnull: true}
-    fecha:      {type: date, notnull: true}
- 
+    titulo:      {type: string(255), notnull: true}
+    cuerpo:      {type: string(10000), notnull: true}
+    imagen:      {type: string(255), notnull: true}
+    autor:       {type: string(255), notnull: true}
+    lugar:       {type: string(255), notnull: true}
+    fecha:       {type: date, notnull: true}
+    servicio_id: {type: integer}
+  relations:
+    Servicio: {local: servicio_id, foreign: id, type: one, foreignAlias: Noticia}
+
+Servicio:
+  actAs: [Timestampable]
+  columns:
+    nombre:     {type: string(255), notnull: true}
+    pagina_web: {type: string(255), notnull: true}
       
 Contacto:
-  actAs: { Timestampable: ~ }
+  actAs: [Timestampable]
   columns:
-    nombre:     {type: string(200), notnull: true}
-    email:      {type: string(50), notnull: false}
-    telefono:   {type: string(20)}
-    asunto:     {type: string(100)}
-    mensaje:    {type: string(2500)}
+    nombre:   {type: string(200), notnull: true}
+    email:    {type: string(50), notnull: false}
+    telefono: {type: string(20)}
+    asunto:   {type: string(100)}
+    mensaje:  {type: string(2500)}
     
 Persona:
-  actAs: { Timestampable: ~ }
+  actAs: [Timestampable]
   columns:
-    user_id:           {type: integer}
-    nombre:            {type: string(50), notnull: true}
-    ap_paterno:        {type: string(30), notnull: true}
-    ap_materno:        {type: string(30)}
-    ap_casada:         {type: string(30)}
-    ci:                {type: string(14), notnull: true, unique: true}
-    expedido:          {type: string(2), notnull: true}
-    direccion:         {type: string(255), notnull: true}
-    telefono:          {type: string(20)}
-    celular:           {type: string(20), notnull: true}
-    fax:               {type: string(20)}
-    casilla:           {type: string(10)}
-    email:             {type: string(255)}
-    fecha_nacimiento:  {type: date}
-    is_active:         {type: boolean, notnull: true, default: true }
-    foto:              {type: string(50)}   
+    user_id:          {type: integer}
+    nombre:           {type: string(50), notnull: true}
+    ap_paterno:       {type: string(30), notnull: true}
+    ap_materno:       {type: string(30)}
+    ap_casada:        {type: string(30)}
+    ci:               {type: string(14), notnull: true, unique: true}
+    expedido:         {type: string(2), notnull: true}
+    direccion:        {type: string(255), notnull: true}
+    telefono:         {type: string(20)}
+    celular:          {type: string(20), notnull: true}
+    fax:              {type: string(20)}
+    casilla:          {type: string(10)}
+    email:            {type: string(255)}
+    fecha_nacimiento: {type: date}
+    is_active:        {type: boolean, notnull: true, default: true }
+    foto:             {type: string(50)}   
   relations:
     sfGuardUser: {local: user_id, foreign: id, type: one, foreignAlias: Persona}

@@ -1,0 +1,30 @@
+Servicio:
+  Servicio_1:
+    nombre:     CRUCEROS SOCIALES
+    pagina_web: crucerosSociales
+  Servicio_2:
+    nombre: CRUCEROS COORPORATIVOS
+    pagina_web: crucerosCorporativos
+  Servicio_3:
+    nombre: CRUCEROS EDUCATIVOS
+    pagina_web: crucerosEducativoTodo
+  Servicio_4:
+    nombre: CRUCEROS FERROVIARIO LACUSTRE
+    pagina_web: cruceroFerroviarioLac
+  Servicio_5:
+    nombre: CRUCEROS DE CONFRATERNIDAD
+    pagina_web: cruceroConfraternidadTodo
+  Servicio_6:
+    nombre: CRUCEROS DE SEMANA SANTA
+    pagina_web: semanaSanta
+  Servicio_7:
+    nombre: CRUCEROS DE AÑO NUEVO
+    pagina_web: anoNuevo
+  Servicio_8:
+    nombre: CRUCEROS PARA PAPA
+    pagina_web: cruceroPapa
+  Servicio_9:
+    nombre: CRUCEROS PARA MAMA
+    pagina_web: cruceroMama
+
+    

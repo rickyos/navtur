@@ -15,12 +15,12 @@
   </head>
     <body>
         <div id='menu-back'>
-            <?php if($sf_user->isAuthenticated()==true):?>
             <div id="logo-back">
                 <div id="logo_text">
                     <h1><?php echo link_to('Navtur', 'inicio/index')?><a><span class="logo_colour"> - Sistema Administrativo</span></a></h1>
                 </div>
             </div>
+            <?php if($sf_user->isAuthenticated()==true):?>
             <div>
                 <ul class="sf-menu" id="nav">
                     <li><?php echo link_to('Noticias', 'noticias/index')?></li>
@@ -33,7 +33,13 @@
                 <h6>Nombre: <?php echo $sf_user->getGuardUser()->getPersona();?></h6>
                 <?php echo link_to('Salir','sfGuardAuth/Signout', array ('title'=>'Cerrar sesión')) ?>
             </div>
-            <?php endif ?>                    
+            <?php else: ?>
+            <div>
+                <ul class="sf-menu" id="nav">
+                    <li><a href="/frontend.php">Ir a la Página</a></li>
+                </ul>
+            </div>
+            <?php endif ?>
         </div>
         <div id="main">
             <?php echo $sf_content ?>
