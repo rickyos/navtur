@@ -18,7 +18,7 @@
         <div class="main">
             <div class="header">
                 <div class="logo">
-                        <a href="/frontend.php"><img src="/images/logonav.png" width="500" height="150" alt=""/></a>
+                        <a href="/frontend.php"><img src="/images/logonav.png" alt=""/></a>
                     </div>
                 <div class="header_resize">
                     <div class="menu_nav">

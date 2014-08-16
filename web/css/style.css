@@ -66,11 +66,18 @@ a {
 }
 .logo {
     margin:0;
-    padding:0;
+    padding: 10px;
     float:left;
     width:auto;
     height:220px;
 }
+
+.logo img {
+    padding-top: 50px;
+    width : 470px;
+    height: 150px;
+}
+
 h1 {
     margin:0;
     padding:100px 0;
@@ -512,6 +519,10 @@ a {
     background:#f6f6f6;
     line-height:1.5em;
     color:#6e6e6e;
+}
+
+.servicios a {
+
 }
 
 .imagen_paquetes {
