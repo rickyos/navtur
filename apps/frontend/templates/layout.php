@@ -17,19 +17,20 @@
     <body>
         <div class="main">
             <div class="header">
+                <div class="logo">
+                        <a href="/frontend.php"><img src="/images/logonav.png" width="500" height="150" alt=""/></a>
+                    </div>
                 <div class="header_resize">
                     <div class="menu_nav">
                         <ul>
                             <li><?php echo link_to('Inicio', 'home/index') ?></li>
-                            <li><?php echo link_to('Acerca de Nosotros', 'home/acercaDe') ?></li>                    
+                            <li><?php echo link_to('Nosotros', 'home/acercaDe') ?></li>                    
                             <li><?php echo link_to('Cruceros', 'home/cruceros') ?></li>
                             <li><?php echo link_to('Contacto', 'contactos/new') ?></li>
                             <li><a href="/backend.php">Login</a></li>
                         </ul>
                     </div>
-                    <div class="logo">
-                        <h1><a href="/frontend.php"><img src="/images/logonav.jpg" width="250" height="100" alt=""/></a></h1>
-                    </div>
+                    
                     <div class="clr"></div>
                     <div class="slider">
                         <div id="coin-slider"> 
