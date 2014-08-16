@@ -28,14 +28,21 @@
                         </ul>
                     </div>
                     <div class="logo">
-                        <h1><a href="/frontend.php"><img src="/images/logonav.png" width="180" height="100" alt=""/></a></h1>
+                        <h1><a href="/frontend.php"><img src="/images/logonav.jpg" width="250" height="100" alt=""/></a></h1>
                     </div>
                     <div class="clr"></div>
                     <div class="slider">
                         <div id="coin-slider"> 
-                            <img src="/images/slide1.jpg" width="960" height="360" alt="" />
-                            <img src="/images/slide2.jpg" width="960" height="360" alt="" />
-                            <img src="/images/slide3.jpg" width="960" height="360" alt="" />
+                                <img src="/images/nt19.jpg" />
+                                <img src="/images/nt17.jpg" />
+                                <img src="/images/nt18.jpg" />
+                                <img src="/images/nt21.jpg" />
+                                <img src="/images/nt24.jpg" />
+                                <img src="/images/nt28.jpg" />
+                                <img src="/images/nt33.jpg" />
+                                <img src="/images/nt37.jpg" />
+                                <img src="/images/nt13.jpg" />
+                                <img src="/images/nt41.jpg" />                          
                         </div>
                         <div class="clr"></div>
                     </div>
@@ -56,6 +63,8 @@
                                 <li><?php echo link_to('Cruceros Sociales', 'home/crucerosSociales') ?></li>
                                 <li><?php echo link_to('Cruceros Corporativos', 'home/crucerosCorporativos') ?></li>
                                 <li><?php echo link_to('Cruceros Ferroviario Lacustre', 'home/cruceroFerroviarioLac') ?></li>
+                                <li><?php echo link_to('Cruceros Educativos (Solo Buque)', 'home/cruceroEducativo') ?></li>
+                                <li><?php echo link_to('Cruceros Educativos (Todo Incluido)', 'home/cruceroEducativoTodo') ?></li>
                                 <li><?php echo link_to('Cruceros de Confraternidad (Solo Buque)', 'home/cruceroConfraternidad') ?></li>
                                 <li><?php echo link_to('Cruceros de Confraternidad (Todo Incluido)', 'home/cruceroConfraternidadTodo') ?></li>
                                 <li><?php echo link_to('Cruceros de Semana Santa', 'home/semanaSanta') ?></li>

@@ -5,7 +5,7 @@
     <div class="imagen_paquetes">
         <img src="/images/matrimonio1.jpg"/>
         <img src="/images/matrimonio2.jpg"/>
-        <img src="/images/matrimonio3.jpg"/>
+        
     </div>
          
     <strong>Frecuencia: </strong> Disponibilidad de acuerdo a calendario<br>
