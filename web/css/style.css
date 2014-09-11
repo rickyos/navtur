@@ -532,6 +532,12 @@ a {
     float: right;
 }
 
+.imagen_paquetes img {
+    width:100%;
+    height: 100%;
+    border: cadetblue solid;
+}
+
 .imagen_acerc {
     padding: 5px 10px; 
     margin:0 auto;
@@ -539,14 +545,20 @@ a {
     float: left;
 }
 
-
-.imagen_paquetes img {
+.imagen_acerc img {
     width:100%;
     height: 100%;
     border: cadetblue solid;
 }
 
-.imagen_acerc img {
+.imagen_cruc {
+    padding: 5px 10px; 
+    margin:0 auto;
+    width:80%;
+    float: left;
+}
+
+.imagen_cruc img {
     width:100%;
     height: 100%;
     border: cadetblue solid;
